@@ -5,13 +5,12 @@ import { MaterializeModule } from 'angular2-materialize';
 import { APP_ROUTING } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,
