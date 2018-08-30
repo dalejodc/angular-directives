@@ -8,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class NgClassComponent implements OnInit {
 
   alert: string ="succes";
+  loading:boolean = false;
+  icon:string = 'save';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  execute(){
+  	this.loading = true;
+  	this.icon = 'refresh';
+
+  	setTimeout(()=>{this.loading = false; this.icon = 'done'}, 3000);
   }
 
 }

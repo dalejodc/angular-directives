@@ -9,10 +9,25 @@
 }
 
 .error{
-	background-color:#ef9a9a;
+	background-color:#FFAAAA;
 	color: #c62828;
 }
 
 .bold{
 	font-weight: 700;
+}
+
+/*Spin*/
+@-moz-keyframes spin {
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    to {transform:rotate(360deg);}
+}
+
+.spin {
+    animation: spin 1000ms linear infinite;
 }
