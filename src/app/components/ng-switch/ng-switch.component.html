@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="row">
+		<h2>[ngSwitch]</h2>
+		<div class="divider"></div>
+		<br>
+		<h5 class="light">Using ngSwitch to evaluate multiple options</h5>
+		<br>
+		<form action="#" class="center">
+			<div class="col l3 m3 s4">
+				<input name="group1" type="radio" id="test1" (click)="alert='succes'"/>
+				<label for="test1">Succes</label>
+			</div>
+			<div class="col l3 m3 s4">
+				<input name="group1" type="radio" id="test2" (click)="alert='info'"/>
+				<label for="test2" >Info</label>
+			</div>
+			<div class="col l3 m3 s4">
+				<input class="with-gap" name="group1" type="radio" id="test3"  (click)="alert='error'"/>
+				<label for="test3">Error</label>
+			</div>
+			<div class="col l3 m3 s4">
+				<input class="with-gap" name="group1" type="radio" id="test4"  (click)="alert='warning'"/>
+				<label for="test4">Warning</label>
+			</div>
+		</form>
+		<br>
+		<br>
+		<div [ngSwitch]="alert" class="center">
+			<div *ngSwitchCase="'succes'">
+				<div class="col l12 m12 s12 center"> 
+					<div class="card-panel lighten-2 succes"><span class="bold">Well done!</span> You are learning about [ng directives]</div>
+				</div>
+			</div>
+			<div *ngSwitchCase="'info'">
+				<div class="col l12 m12 s12 center"> 
+					<div class="card-panel lighten-2 info"><span class="bold">Well done!</span> You are learning about [ng directives]</div>
+				</div>
+			</div>
+			<div *ngSwitchCase="'error'">
+				<div class="col l12 m12 s12 center"> 
+					<div class="card-panel lighten-2 error"><span class="bold">Well done!</span> You are learning about [ng directives]</div>
+				</div>
+			</div>
+			<div *ngSwitchCase="'warning'">
+				<div class="col l12 m12 s12 center"> 
+					<div class="card-panel lighten-2 warning"><span class="bold">Well done!</span> You are learning about [ng directives]</div>
+				</div>
+			</div>
+			<div *ngSwitchDefault>Danger</div>
+		</div>
+		<div></div>
+	</div>
+</div>

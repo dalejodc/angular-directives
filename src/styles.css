@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.succes{
+	background-color: #c5e1a5 !important;
+	color: #689f38;
+}
+
+.info{
+	background-color:#b3e5fc !important;
+	color: #29b6f6;
+}
+
+.error{
+	background-color:#FFAAAA !important;
+	color: #c62828;
+}
+
+.warning{
+	background-color:#fff9c4 !important;
+	color: #ffc107;
+}
+
+.bold{
+	font-weight: 700;
+}

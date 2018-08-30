@@ -21,8 +21,11 @@
 	<div class="row">
 		<h5 class="light">Simulating an asynchronous process</h5>
 		<div class="col l6">
-			<a  (click)="execute()" class="waves-effect waves-light btn-large green"><i class="material-icons left" 
-				[ngClass]="{'spin': loading}">{{icon}}</i>Save</a>
+			<button type="button" (click)="execute()" [disabled]="loading" class="waves-effect waves-light btn-large green"><i class="material-icons left" 
+				[ngClass]="{'spin': loading}" >{{icon}}</i>
+				<span *ngIf="loading">Wait...</span>
+				<span *ngIf="!loading">Save</span>
+			</button>
 		</div>
 	</div>
 </div>
