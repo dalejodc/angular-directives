@@ -22,3 +22,7 @@
 .bold{
 	font-weight: 700;
 }
+
+.padding{
+	padding-top: 50px !important;
+}
