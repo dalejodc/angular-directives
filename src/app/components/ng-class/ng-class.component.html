@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<h2>[ngClass]</h2>
+		<div class="divider"></div>
+		<br>
+		<div class="col l6 m12 s12"> 
+			<div [ngClass]="alert" class="card-panel lighten-2 "><span class="bold">Well done!</span> You are learning [ng directives]</div>
+		</div>
+		<div class="col l2 m4 s4 " style="padding-top: 30px">
+			<a class="waves-effect waves-light btn right light-blue darken-1 col s12" (click)="alert= 'info'">Info</a>		
+		</div>
+		<div class="col l2 m4 s4 " style="padding-top: 30px">
+			<a class="waves-effect waves-light btn right  light-green col s12" (click)="alert='succes '">Succes</a>
+		</div>
+		<div class="col l2 m4 s4 " style="padding-top: 30px">
+			<a class="waves-effect waves-light btn right red darken-1 col s12" (click)="alert=' error'">Error</a>
+		</div>
+	</div>
+</div>

@@ -1,11 +1,15 @@
 <div class="container">
 	<div class="row">
+		<h2>[style]</h2>
+		<div class="divider"></div>
 		<div class="col l8 m6 s12"> 
-			<p [style.fontSize.px]="size" class="light">Lorem ipsum dolor sit amet.</p>
+			<p [style.fontSize.px]="size" class="light">Well done! You are learning [ng directives]</p>
 		</div>
-		<div class="col l4 m6 s12">
-			<a class="btn-floating green" (click)="increaseSize()"><i class="material-icons">add</i></a>
-			<a class="btn-floating red" (click)="decreaseSize()"><i class="material-icons">remove</i></a>
+		<div class="col l2 m6 s12" style="padding-top: 30px">
+			<a class="btn-floating green right" (click)="increaseSize()" ><i class="material-icons">add</i></a>
+		</div>
+		<div class="col l2 m6 s12" style="padding-top: 30px">
+			<a class="btn-floating red left" (click)="decreaseSize()"><i class="material-icons">remove</i></a>
 		</div>
 	</div>
 </div>

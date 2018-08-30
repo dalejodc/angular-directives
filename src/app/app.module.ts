@@ -6,11 +6,13 @@ import { APP_ROUTING } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
