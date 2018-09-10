@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { toast } from 'angular2-materialize';
 
 @Component({
 	selector: 'app-ng-style',
@@ -15,11 +16,21 @@ export class NgStyleComponent implements OnInit {
 	}
 
 	increaseSize(){
-		this.size = this.size + 3;
+		this.size = this.size + 1;
 	}
 
 	decreaseSize(){
-		this.size = this.size - 3;
+		if(this.size >20 && this.size <100){
+			toast("Be careful, It could disappear!", 1000);
+			this.size = this.size - 3;
+		}
+		if(this.size >10 && this.size <20){
+			toast("Are you sure?", 1000);
+			this.size = this.size - 3;
+		}
+		if(this.size >0 && this.size <10){
+			toast("It is enough!", 1000);
+		}
 	}
 
 }
