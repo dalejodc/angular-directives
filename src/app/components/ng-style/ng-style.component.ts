@@ -9,6 +9,7 @@ import { toast } from 'angular2-materialize';
 export class NgStyleComponent implements OnInit {
 
 	size:number = 30;
+	hexa:string ='#ffa726 ';
 
 	constructor() { }
 

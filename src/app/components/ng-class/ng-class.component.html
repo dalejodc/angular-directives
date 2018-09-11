@@ -3,7 +3,7 @@
 		<h2>[ngClass]</h2>
 		<div class="divider"></div>
 		<br>
-		<h5 class="light">Adding/removing clases</h5>
+		<h5 class="light">Adding/removing clases</h5><br>
 		<div class="col l6 m12 s12"> 
 			<div [ngClass]="alert" class="card-panel lighten-2 z-depth-0"><span class="bold">Well done!</span> You are learning about [ng directives]</div>
 		</div>
@@ -19,8 +19,8 @@
 	</div>
 
 	<div class="row">
-		<h5 class="light">Simulating an asynchronous process</h5>
-		<div class="col l6">
+		<h5 class="light">Simulating an asynchronous process</h5><br>
+		<div class="col l6 right">
 			<button type="button" (click)="execute()" [disabled]="loading" class="waves-effect waves-light btn-large green"><i class="material-icons left" 
 				[ngClass]="{'spin': loading}" >{{icon}}</i>
 				<span *ngIf="loading">Wait...</span>
@@ -28,4 +28,5 @@
 			</button>
 		</div>
 	</div>
+        
 </div>

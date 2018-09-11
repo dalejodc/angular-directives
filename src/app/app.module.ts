@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
+import { FormsModule } from '@angular/forms';
 
 import { APP_ROUTING } from './app.routes';
 
@@ -19,6 +20,7 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
   imports: [
     BrowserModule,
     MaterializeModule,
+    FormsModule,
     APP_ROUTING
   ],
   providers: [],

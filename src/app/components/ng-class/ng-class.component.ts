@@ -10,6 +10,7 @@ export class NgClassComponent implements OnInit {
   alert: string ="succes";
   loading:boolean = false;
   icon:string = 'save';
+  
 
   constructor() { }
 
